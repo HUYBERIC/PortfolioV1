@@ -1,0 +1,58 @@
+.third-section-services{
+    background-color: $second-bg-color;
+    color: black;
+    h2{
+        margin-bottom: 5rem;
+        color: white;
+    }
+    .heading{
+        font-size: 8rem;
+        text-align: center;
+        margin: 5rem 0;
+    }
+    .services-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        align-items: center;
+        gap: 2.5rem;
+        .service-box{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $main-color;
+            height: 550px;
+            border-radius: 3rem;
+            border: 5px solid transparent;
+            cursor: pointer;
+            transition: 0.4s ease-in-out;
+            &:hover{
+                background: $second-bg-color;
+                color: $main-color;
+                border: 5px solid $main-color;
+                transform: scale(1.03);
+            }
+            .service-info{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                padding: 5rem;
+                i{
+                    font-size: 8rem;
+                }
+                h4{
+                    font-size: 4rem;
+                    font-weight: 800;
+                    line-height: 1.2;
+                    margin: 2rem 0;
+                }
+                p{
+                    font-size: 1.4rem;
+                    font-weight: 600;
+                    line-height: 1.7;
+                }
+                }
+        }
+    }
+}

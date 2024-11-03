@@ -1,0 +1,73 @@
+.contact{
+    background-color: $second-bg-color;
+    h2{
+        margin-bottom: 5rem;
+        color: white;
+    }
+    .heading{
+        font-size: 8rem;
+        text-align: center;
+        margin: 5rem 0;
+    }
+    form{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+        margin: 5rem auto;
+        text-align: center;
+        .input-group{
+            .input-box{
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                input{
+                    width: 100%;
+                    padding: 2.5rem;
+                    font-size: 1.8rem;
+                    color: $text-color;
+                    background: $bg-color;
+                    border: 2px solid $main-color;
+                    border-radius: 2rem;
+                    margin: 1.5rem 0;
+                    resize: none;
+                }
+            }
+        }
+        .input-group-2{
+            textarea{
+                width: 100%;
+                padding: 2.5rem;
+                font-size: 1.8rem;
+                color: $text-color;
+                background: $bg-color;
+                border: 2px solid $main-color;
+                border-radius: 2rem;
+                margin: 1.5rem 0;
+                resize: none;
+            }
+            .btn{
+                display: inline-block;
+                padding: 1rem 2.8rem;
+                background: $main-color;
+                box-shadow: 0 0 25px $main-color;
+                border-radius: 4rem;
+                font-size: 1.6rem;
+                color: black;
+                border: 2px solid transparent;
+                letter-spacing: 0.1rem;
+                font-weight: 600;
+                transition: 0.3s ease-in-out;
+                margin-top: 2rem;
+                cursor: pointer;
+                &:hover{
+                    transform: scale(1.05);
+                    box-shadow: 0 0 50px $main-color;
+                }
+            }
+        }
+    }
+}
+
+
+

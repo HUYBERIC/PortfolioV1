@@ -1,0 +1,55 @@
+.header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left:0;
+    padding: 4rem 15%;
+    background-color: rgba(0,0,0,0.3);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    .logo{
+        font-size: 3rem;
+        color: $text-color;
+        font-weight: 800;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+    #menu-icon{
+        font-size: 3.5rem;
+        color: $main-color;
+        display: none;
+    }
+    .navbar a{
+        font-size: 1.8rem;
+        color: $text-color;
+        margin-left: 4rem;
+        font-weight: 500;
+        transform: 0.3 ease-in-out;
+        border-bottom: 3px solid transparent;
+        &:hover{
+            color: $main-color;
+            border-bottom: 3px solid $main-color;
+        }
+    }
+    .gradient-btn{
+        font-size: 1.8rem;
+        padding: 1rem 2rem;
+        border-radius: 3rem;
+        background: $main-color;
+        letter-spacing: 1px;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+        color: $third-color;
+        border: none;
+        text-wrap: nowrap;
+        &:hover{
+            transform: scale(1.05);
+        }
+    }
+}
